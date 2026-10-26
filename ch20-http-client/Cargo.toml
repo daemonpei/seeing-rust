@@ -1,0 +1,13 @@
+[package]
+name = "ch20-http-client"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "Chapter 20 - HTTP clients and API consumption"
+
+[dependencies]
+reqwest = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }

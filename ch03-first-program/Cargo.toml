@@ -1,0 +1,8 @@
+[package]
+name = "ch03-first-program"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "Chapter 3 — your first Rust program, statement by statement"

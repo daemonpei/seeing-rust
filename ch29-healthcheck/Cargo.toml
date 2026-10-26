@@ -1,0 +1,21 @@
+[package]
+name = "ch29-healthcheck"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "Chapter 29 - project 1: a health check CLI tool"
+
+[dependencies]
+clap = { workspace = true }
+reqwest = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+
+[dev-dependencies]
+tempfile = { workspace = true }
+
+[[bin]]
+name = "healthcheck"
+path = "src/main.rs"

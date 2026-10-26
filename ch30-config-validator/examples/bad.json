@@ -1,0 +1,7 @@
+{
+  "service": "   ",
+  "port": 0,
+  "timeoutSeconds": 9999,
+  "environment": "prod",
+  "replicas": 99
+}

@@ -1,0 +1,19 @@
+[package]
+name = "ch32-dependencies"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "Chapter 32 - dependency management and third-party crates"
+
+[features]
+default = ["fast-path"]
+fast-path = []
+strict = []
+# `pattern` pulls in the regex crate; without it the crate has no dependencies
+# at all, which is the point of the chapter's `default-features = false` advice.
+pattern = ["dep:regex"]
+
+[dependencies]
+regex = { workspace = true, optional = true }

@@ -1,0 +1,9 @@
+[package]
+name = "ch34-release"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "Chapter 34 - building, releasing and running Rust programs"
+build = "build.rs"

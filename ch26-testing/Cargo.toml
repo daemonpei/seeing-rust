@@ -1,0 +1,15 @@
+[package]
+name = "ch26-testing"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "Chapter 26 - testing with cargo"
+
+[dev-dependencies]
+tempfile = { workspace = true }
+
+[[bin]]
+name = "ch26"
+path = "src/main.rs"

@@ -1,0 +1,8 @@
+[package]
+name = "ch35-reading"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "Chapter 35 - reading Rust code and continuing your learning"

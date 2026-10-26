@@ -1,0 +1,8 @@
+[package]
+name = "ch02-setup"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "Chapter 2 — what a Cargo project is made of"

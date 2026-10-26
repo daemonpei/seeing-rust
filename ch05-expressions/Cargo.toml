@@ -1,0 +1,8 @@
+[package]
+name = "ch05-expressions"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "Chapter 5 — operators, expressions and basic decisions"

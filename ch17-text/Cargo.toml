@@ -1,0 +1,11 @@
+[package]
+name = "ch17-text"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "Chapter 17 - text processing and regular expressions"
+
+[dependencies]
+regex = { workspace = true }

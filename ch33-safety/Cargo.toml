@@ -1,0 +1,8 @@
+[package]
+name = "ch33-safety"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "Chapter 33 - safety, unsafe Rust and security basics"

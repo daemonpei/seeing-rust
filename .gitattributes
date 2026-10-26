@@ -1,0 +1,12 @@
+* text=auto eol=lf
+
+# Rust sources are LF everywhere. Windows checkouts that convert them to CRLF
+# produce spurious diffs and make the book's listings not match the file.
+*.rs   text eol=lf
+*.toml text eol=lf
+*.md   text eol=lf
+*.json text eol=lf
+*.yml  text eol=lf
+
+*.png binary
+*.ico binary

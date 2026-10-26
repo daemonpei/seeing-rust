@@ -1,0 +1,11 @@
+[package]
+name = "ch19-cli"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "Chapter 19 - command-line programs"
+
+[dependencies]
+clap = { workspace = true }

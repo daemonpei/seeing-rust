@@ -1,0 +1,12 @@
+[package]
+name = "ch18-json"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "Chapter 18 - JSON and structured data"
+
+[dependencies]
+serde = { workspace = true }
+serde_json = { workspace = true }

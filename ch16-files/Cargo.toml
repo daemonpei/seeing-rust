@@ -1,0 +1,8 @@
+[package]
+name = "ch16-files"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "Chapter 16 - file I/O and paths"

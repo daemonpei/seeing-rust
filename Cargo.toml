@@ -1,0 +1,71 @@
+[workspace]
+resolver = "2"
+members = [
+  "ch01-hello",
+  "ch02-setup",
+  "ch03-first-program",
+  "ch04-values",
+  "ch05-expressions",
+  "ch06-loops",
+  "ch07-functions",
+  "ch08-errors",
+  "ch09-ownership",
+  "ch10-borrowing",
+  "ch11-structs",
+  "ch12-collections",
+  "ch13-modules",
+  "ch14-traits",
+  "ch15-generics",
+  "ch16-files",
+  "ch17-text",
+  "ch18-json",
+  "ch19-cli",
+  "ch20-http-client",
+  "ch21-http-server",
+  "ch22-async",
+  "ch23-threads",
+  "ch24-channels",
+  "ch25-shared-state",
+  "ch26-testing",
+  "ch27-performance",
+  "ch28-observability",
+  "ch29-healthcheck",
+  "ch30-config-validator",
+  "ch31-rest-api",
+  "ch32-dependencies",
+  "ch33-safety",
+  "ch34-release",
+  "ch35-reading",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.82"
+authors = ["Horace Pei <1091186233@qq.com>"]
+license = "MIT"
+repository = "https://github.com/horacepei/seeing-rust-code"
+
+[workspace.dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+clap = { version = "4", features = ["derive", "env"] }
+regex = "1"
+tokio = { version = "1", features = ["full"] }
+axum = "0.7"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+reqwest = { version = "0.12", default-features = false, features = ["blocking", "json", "rustls-tls"] }
+tempfile = "3"
+tower = { version = "0.4", features = ["util"] }
+
+# Building 35 small crates one at a time is slow; one shared target directory
+# and thin LTO keeps `cargo build --workspace` reasonable.
+[profile.dev]
+opt-level = 0
+debug = true
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 1
